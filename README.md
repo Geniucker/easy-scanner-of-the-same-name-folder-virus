@@ -1,39 +1,13 @@
 # C++实现的简易同名文件夹病毒筛查
 
 #### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
-#### 软件架构
-软件架构说明
+学校的教学机中流行着同名文件夹病毒，我用C++实现了一个简单的筛查器（通过观察病毒复制不会改变文件大小，且这个大小不存在于系统文件，因此用文件大小和后缀名判断是否为病毒）
 
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  从release页面下载对应系统版本的程序（32位和64位不能混用）
+2.  打开程序
+3.  根据提示输入要扫描的目录
+4.  若发现疑似病毒的文件运行结束后会在程序的目录下生成`result+数字.txt`文件，内容为疑似程序的全路径
