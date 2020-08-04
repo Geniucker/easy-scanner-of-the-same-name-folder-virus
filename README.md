@@ -7,7 +7,7 @@
 
 #### 使用说明
 
-1.  从[release页面](https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)下载对应系统版本的程序（32位和64位不能混用）
+1.  从<a href="https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases" style="color:#35abff;">release页面</a>下载对应系统版本的程序（32位和64位不能混用）
 2.  打开程序
 3.  根据提示输入要扫描的目录
 4.  若发现疑似病毒的文件运行结束后会在程序的目录下生成`result+数字.txt`文件，内容为疑似程序的全路径
