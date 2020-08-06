@@ -1,5 +1,5 @@
 # C++实现的简易同名文件夹病毒筛查
-
+本项目还在同时托管在[gitee](https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus)、[GitHub](https://github.com/Geniucker/easy-scanner-of-the-same-name-folder-virus)、[GitLab](https://gitlab.com/Geniucker/easy-scanner-of-the-same-name-folder-virus)
 #### 介绍
 学校的教学机中流行着同名文件夹病毒，我用C++实现了一个简单的筛查器（通过观察病毒复制不会改变文件大小，且这个大小不存在于系统文件，因此用文件大小和后缀名判断是否为病毒）
 
