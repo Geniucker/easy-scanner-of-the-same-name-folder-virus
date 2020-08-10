@@ -28,7 +28,7 @@ void findAllFile(const char * path,const char * format,const char * filename,int
             findAllFile(newpath.c_str(),format,filename,num);
         }
         else{
-            if(regex_match(findData.name,m_format)&&348156==findData.size){
+            if(regex_match(findData.name,m_format)&&(348156==findData.size||1896413==findData.size)){
                 ++num;     //判断是不是指定类型文件，数字是同名文件夹病毒的大小
                 ofstream output(filename,ios::out|ios::app);
                 output << path << "\\" << findData.name << endl;
