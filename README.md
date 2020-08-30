@@ -6,7 +6,7 @@
 
 
 #### 使用方法
-1. 从release页面下载对应系统版本的程序压缩包（32位和64位不能混用，学校班级教室的教学机一般是32位的）并解压到某一目录（建议解压到桌面上的某一个文件夹，防止因为权限的问题造成错误）。链接：  
+1. 从release页面下载对应系统版本的程序压缩包（~~32位和64位不能混用~~v0.0.3及之后的版本32位和64位使用同一的版本，学校班级教室的教学机一般是32位的）并解压到某一目录（建议解压到桌面上的某一个文件夹，防止因为权限的问题造成错误）。链接：  
 [从gitee下载](https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)（中国大陆推荐使用这个）  
 [从GitHub下载](https://github.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)  
 [从GitLab下载](https://gitlab.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/-/releases)
@@ -26,6 +26,8 @@
 5. 由于此病毒有变种导致有不同的大小，不保证能找到所有的病毒
 6. 由于未仔细阅读本文档造成数据丢失作者不承担任何责任
 
+#### v0.0.3更新说明
+1. 增加了检测病毒是否在进程中的功能，加快了删除文件的速度
 #### v0.0.2更新说明
 1. 修复了一个v0.0.1严重的BUG（导致输出的疑似病毒文件的路径有误），因此v0.0.1的`main.exe`导出的`配置文件`无效，无法给后续版本的`clean.exe`使用
 2. 增加删除病毒文件功能
