@@ -28,13 +28,14 @@ int main()
         }
     }
     choose = stoi(tem);
+    string getPro = getCMD("tasklist");
     ifstream input(prob[choose-1],ios::in);
     while(!input.eof()){
         getline(input,get);
         if(""!=get){
             ++total;
             regex_search(get,m,regex(R"(([^<>/\\\|:""\*\?]+)\.\w+$)"));
-            system(("taskkill /im \""+string(m[0])+"\" /f").c_str());
+            if(regex_search(getPro,regex(string(m[0]))))system(("taskkill /im \""+string(m[0])+"\" /f").c_str());
             system("cls");
             if(!remove(get.c_str()))++success;
         }

@@ -57,12 +57,11 @@ vector<string> findFile(const char * path,const char * format)
     return result;
 }
 
-string getCmdResult(const char* cmd)  
-{
+string getCMD(string cmd){//获得cmd返回值
 	FILE *file;
 	char ptr[1024] = { 0 };
 	char tmp[1024] = { 0 };
-	strcat_s(ptr, cmd);
+	strcat_s(ptr, cmd.c_str());
 	string result = "";
 	if ((file = _popen(ptr, "r")) != NULL)
 	{
