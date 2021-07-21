@@ -7,9 +7,9 @@
 
 #### 使用方法
 1. 从release页面下载对应系统版本的程序压缩包（~~32位和64位不能混用~~v0.0.3及之后的版本32位和64位使用同一的版本，学校班级教室的教学机一般是32位的）并解压到某一目录（建议解压到桌面上的某一个文件夹，防止因为权限的问题造成错误）。链接：  
-[从gitee下载](https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)（中国大陆推荐使用这个）  
-[从GitHub下载](https://github.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)  
-[从GitLab下载](https://gitlab.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/-/releases)
+[从gitee下载](https://gitee.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)（中国大陆推荐使用这个，但是要登录）  
+[从GitLab下载](https://gitlab.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/-/releases)（也推荐这个且不用登陆）  
+[从GitHub下载](https://github.com/Geniucker/easy-scanner-of-the-same-name-folder-virus/releases)
 2. 打开`scan.exe`程序
 3. 根据提示输入或拖入要扫描的文件夹或盘符
 4. 若发现疑似病毒的文件运行结束后会在程序的目录下生成`result+数字.txt`文件（下面简称`配置文件`），内容为疑似程序的全路径，多次执行`scan.exe`程序产生的`result+数字.txt`的`数字`将依次增大
