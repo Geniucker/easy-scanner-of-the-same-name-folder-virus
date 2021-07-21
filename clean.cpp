@@ -35,7 +35,14 @@ int main()
         if(""!=get){
             ++total;
             regex_search(get,m,regex(R"(([^<>/\\\|:""\*\?]+)\.\w+$)"));
-            if(regex_search(getPro,regex(string(m[0]))))system(("taskkill /im \""+string(m[0])+"\" /f").c_str());
+            tem = string(m[0]);
+            for(int i=0;i<tem.size();++i){
+                if(tem[i]=='$'||tem[i]=='('||tem[i]==')'||tem[i]=='+'||tem[i]=='.'||tem[i]=='['||tem[i]==']'||tem[i]=='^'||tem[i]=='{'||tem[i]=='}'){
+                    tem = tem.substr(0,i)+"\\"+tem.substr(i);
+                    i=i+1;
+                }
+            }
+            if(regex_search(getPro,regex(tem)))system(("taskkill /im \""+string(m[0])+"\" /f").c_str());
             system("cls");
             if(!remove(get.c_str()))++success;
         }
